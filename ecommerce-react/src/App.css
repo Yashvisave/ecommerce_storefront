@@ -1,0 +1,78 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #9fccfb;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cart-count {
+  background: #2b91fe;
+  color: white;
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  border-color: white;
+  margin-left: 5px;
+}
+
+.cart-popup {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 250px;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.cart-popup ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-popup li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-popup button {
+  width: 100%;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
